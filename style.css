@@ -1,0 +1,204 @@
+:root {
+  --bg: #f7f4ee;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --primary: #4338ca;
+  --primary-dark: #312e81;
+  --line: #e8e1d6;
+  --gold: #f59e0b;
+  --shadow: 0 18px 45px rgba(61, 45, 18, 0.12);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top, #fffdf7 0%, var(--bg) 48%, #efe7d7 100%);
+  line-height: 1.7;
+}
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.hero, .panel {
+  background: rgba(255,255,255,0.86);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  margin-bottom: 18px;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #ede9fe;
+  color: var(--primary-dark);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(32px, 8vw, 54px);
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+}
+
+.lead, .muted {
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.button, .otoca-link {
+  display: inline-block;
+  border: 0;
+  padding: 12px 18px;
+  border-radius: 14px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(67, 56, 202, 0.24);
+}
+
+.button.secondary {
+  background: white;
+  color: var(--primary);
+  border: 1px solid #c7d2fe;
+  box-shadow: none;
+}
+
+.spot-image, .card-image {
+  width: 100%;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: #eee;
+  object-fit: cover;
+}
+
+.spot-image { max-height: 360px; }
+
+.area {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 0 12px;
+}
+
+.rarity {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: white;
+  margin-right: 6px;
+}
+
+.N { background: #6b7280; }
+.R { background: #3b82f6; }
+.SR { background: #a855f7; }
+.SSR { background: #f59e0b; color: black; }
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+}
+
+.card-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.draw-area {
+  display: grid;
+  gap: 16px;
+  place-items: center;
+  padding: 20px;
+  border: 1px dashed #c4b5fd;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #fff7ed, #eef2ff);
+  text-align: center;
+}
+
+.trading-card {
+  width: min(100%, 360px);
+  margin-top: 8px;
+  padding: 14px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, #ffffff, #faf7ef);
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+.trading-card h3 {
+  margin: 10px 0 6px;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.trading-card audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.collection-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.collection-item {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: white;
+}
+
+.collection-item strong {
+  display: block;
+}
+
+.text-button {
+  margin-top: 14px;
+  background: transparent;
+  color: #dc2626;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.footer-note {
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+code {
+  background: #f1ece3;
+  padding: 2px 5px;
+  border-radius: 5px;
+}

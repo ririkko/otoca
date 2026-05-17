@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OTOCA Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <p class="badge">OTOCA DEMO</p>
+      <h1>現地の音を集める<br>音トレカMVP</h1>
+      <p class="lead">
+        QRコードからスポットページを開き、JSON-LDの情報を読み込んで、音みくじでトレカを取得する試作です。
+      </p>
+      <div class="actions">
+        <a class="button" href="spots/heiwa-no-kane.html">平和の鐘スポットを開く</a>
+        <a class="button secondary" href="#collection">コレクションを見る</a>
+      </div>
+    </section>
+
+    <section class="panel" id="collection">
+      <h2>保存済みコレクション</h2>
+      <p class="muted">このブラウザのlocalStorageに保存された音カードを表示します。</p>
+      <div id="collectionList" class="collection-list"></div>
+      <button class="text-button" id="clearCollectionButton" type="button">コレクションを削除</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    renderCollectionList();
+  </script>
+</body>
+</html>
